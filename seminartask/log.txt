@@ -1,0 +1,18 @@
+Jun 4, 2018 4:54:00 PM, Exception was thrown: Database failure! Cannot access ID: Cola
+integration.ItemRegistryException: Database failure! Cannot access ID: Cola
+	at integration.ItemRegistry.findItem(ItemRegistry.java:36)
+	at controller.Controller.enterItemIDAndQuantity(Controller.java:76)
+	at view.View.sampleExecution(View.java:38)
+	at startup.Main.main(Main.java:24)
+Jun 4, 2018 4:54:00 PM, Exception was thrown: payment 40kr is not enough for the purchase 50kr.
+model.InvalidPaymentException: payment 40kr is not enough for the purchase 50kr.
+	at model.Sale.caculateChange(Sale.java:127)
+	at controller.Controller.enterPaidCash(Controller.java:91)
+	at view.View.sampleExecution(View.java:49)
+	at startup.Main.main(Main.java:24)
+Jun 4, 2018 4:54:00 PM, Exception was thrown: lgwlfg could not be found in the database.
+integration.ItemNotFoundException: lgwlfg could not be found in the database.
+	at integration.ItemRegistry.findItem(ItemRegistry.java:45)
+	at controller.Controller.enterItemIDAndQuantity(Controller.java:76)
+	at view.View.sampleExecution(View.java:59)
+	at startup.Main.main(Main.java:24)
